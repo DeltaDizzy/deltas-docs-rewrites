@@ -1,0 +1,8 @@
+site_name: My FRC Docs
+theme: readthedocs
+markdown_extensions:
+  - admonition
+nav:
+  - Home: index.md
+  - Command-Based:
+    - Getting Started: command-based/getting-started.md
