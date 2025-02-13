@@ -6,3 +6,5 @@ nav:
   - Home: index.md
   - Command-Based:
     - Getting Started: command-based/getting-started.md
+  - System Identification:
+    - Introduction to System Identification: system-id/system-id.md
