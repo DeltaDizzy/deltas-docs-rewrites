@@ -24,7 +24,7 @@ Kv and Ka can be found with [Recalc](https://reca.lc).
 
 ### Elevator
 
-The addition of gravity complicates things, making Kg and Ks somewhat interconnected. The units of Kg, like Ks, are \[output\]. The minimum output that allows an elevator to move upwards is Kg + Ks, and the minimum output that allows it to move down is Kg - Ks. Slowly increase output until the carriage begins to move upwards (out_up), and then decrease output until the carriage begins to move down (out_down).
+The addition of gravity complicates things, making Kg and Ks somewhat interconnected. The units of Kg, like Ks, are \[output\]. The output that *almost* allows an elevator to move upwards is Kg + Ks, and the output that *almost* allows it to move down is Kg - Ks. Slowly increase output until the carriage begins to move upwards (out_up), and then decrease output until the carriage begins to move down (out_down).
 **[ADD SCOPE GRAPH]**
 
 Kg = (out_up + out_down) / 2
