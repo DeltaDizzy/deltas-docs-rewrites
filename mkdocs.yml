@@ -1,4 +1,4 @@
-site_name: My FRC Docs
+site_name: Deltas-Docs-Rewrites
 theme: readthedocs
 markdown_extensions:
   - admonition
