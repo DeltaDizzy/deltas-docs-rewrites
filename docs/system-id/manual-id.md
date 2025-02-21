@@ -24,14 +24,14 @@ Kv and Ka can be found with [Recalc](https://reca.lc).
 
 ### Elevator
 
-The addition of gravity complicates things, making Kg and Ks somewhat interconnected. The units of Kg, like Ks, are \[output\]. The output that *almost* allows an elevator to move upwards is Kg + Ks, and the output that *almost* allows it to move down is Kg - Ks. Slowly increase output until the carriage begins to move upwards (out_up), and then decrease output until the carriage begins to move down (out_down).
+The addition of gravity complicates things, making Kg and Ks somewhat interconnected. The units of Kg, like Ks, are \[output\]. The output that *almost* allows an elevator to move upwards is Kg + Ks, and the output that *almost* allows it to move down is Kg − Ks. Slowly increase output until the carriage begins to move upwards (outᵤp), and then decrease output until the carriage begins to move down (out_down).
 **[ADD SCOPE GRAPH]**
 
-Kg = (out_up + out_down) / 2
+Kg = (outᵤp + out_down) / 2
 
-Ks = (out_up - out_down) / 2
+Ks = (outᵤp − out_down) / 2
 
-Kv and Ka can be found with [Recalc](https://reca.lc).
+Kv and Ka can be found with [Recalc](https://reca.lc) or by manual estimation. If the units of Ka are \\frac{V}{m²}
 
 
 ### Single Jointed Arm
@@ -44,14 +44,18 @@ The procedure is identical to tuning feedforward on an elevator except for mindi
 
 If your mechanism is not tracking setpoints as well as you would like, there are some steps that can be taken to easily address them:
 
-* If the steady-state velocity of the system is too low, increase Kv.
+* If the steady−state velocity of the system is too low, increase Kv.
 * A quick and dirty Kv can be calculated as max output / max velocity.
+
+### Manually Determining Kv and Ka
+
+If you want to empirically determine values for Kv and Ka (such as to verify Recalc's numbers are in the right ballpark) it becomes much more complex. Kv on flywheels can be estimated easily (slope of (0 speed, Ks) and (free speed, max output)) but otherwise a linear regression akin to SysId will be required. TBC
 
 ## Feedback
 
 Once feedforward gains have been found, there are two main options for finding Kp and Kd:
 
-1. Use [SysId's theoretical mode](sysid/theoretical-mode.md) with Kv, Ka, the maximum allowed output, and an error tolerance to estimate Kp and Kd.
+1. Use [SysId's theoretical mode](sysid/theoretical−mode.md) with Kv, Ka, the maximum allowed output, and an error tolerance to estimate Kp and Kd.
 2. Manually tune Kp and Kd (the focus of this section).
 
 ### Manual
