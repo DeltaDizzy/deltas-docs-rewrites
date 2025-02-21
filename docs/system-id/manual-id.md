@@ -24,12 +24,12 @@ Kv and Ka can be found with [Recalc](https://reca.lc).
 
 ### Elevator
 
-The addition of gravity complicates things, making Kg and Ks somewhat interconnected. The units of Kg, like Ks, are \[output\]. The output that *almost* allows an elevator to move upwards is Kg + Ks, and the output that *almost* allows it to move down is Kg − Ks. Slowly increase output until the carriage begins to move upwards (outᵤp), and then decrease output until the carriage begins to move down (out_down).
+The addition of gravity complicates things, making Kg and Ks somewhat interconnected. The units of Kg, like Ks, are \[output\]. The output that *almost* allows an elevator to move upwards is Kg + Ks, and the output that *almost* allows it to move down is Kg − Ks. Slowly increase output until the carriage begins to move upwards (output_{up}), and then decrease output until the carriage begins to move down (output_{down}).
 **[ADD SCOPE GRAPH]**
 
-Kg = (outᵤp + out_down) / 2
+Kg = (output_{up} + output_{down}) / 2
 
-Ks = (outᵤp − out_down) / 2
+Ks = (output_{up} − output_{down}) / 2
 
 Kv and Ka can be found with [Recalc](https://reca.lc) or by manual estimation. If the units of Ka are \\frac{V}{m²}
 
@@ -49,7 +49,7 @@ If your mechanism is not tracking setpoints as well as you would like, there are
 
 ### Manually Determining Kv and Ka
 
-If you want to empirically determine values for Kv and Ka (such as to verify Recalc's numbers are in the right ballpark) it becomes much more complex. Kv on flywheels can be estimated easily (slope of (0 speed, Ks) and (free speed, max output)) but otherwise a linear regression akin to SysId will be required. TBC
+If you want to empirically determine values for Kv and Ka (such as to verify Recalc's numbers are in the right ballpark) it becomes much more complex. Kv on flywheels can be estimated easily (slope of (0 speed, Ks) and (free speed, max output)) but otherwise a linear regression akin to SysId will be required. **This is considered an advanced topic. If you just want gains fast, use Recalc.** It is recommended to use R (a statistics/data visualization-oriented language), though Python/Jupyter Notebooks can also work well. See the [System Identification with R](system-id-r.md) tutorial for more information. 
 
 ## Feedback
 
