@@ -31,6 +31,8 @@ Kg = (output_{up} + output_{down}) / 2
 
 Ks = (output_{up} − output_{down}) / 2
 
+**[ADD DRAWING OF STILLNESS RANGE]**
+
 Kv and Ka can be found with [Recalc](https://reca.lc) or by manual estimation. If the units of Ka are \\frac{V}{m²}
 
 

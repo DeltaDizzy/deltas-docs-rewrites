@@ -23,7 +23,7 @@ The SysId tool performs two functions, the feedforward regression and running an
 
 ## Table of Contents
 
-− [Manual System Idenification](manual−id.md)
+− [Manual System Idenification](../system-id/manual-id.md)
 − Using SysId
     − [Logging Data](sysid/logging−data.md)
     − [Loading Data](sysid/loading−data.md)
