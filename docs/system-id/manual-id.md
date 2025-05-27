@@ -46,7 +46,7 @@ The procedure is identical to tuning feedforward on an elevator except for mindi
 
 If your mechanism is not tracking setpoints as well as you would like, there are some steps that can be taken to easily address them:
 
-* If the steady−state velocity of the system is too low, increase Kv.
+* If the steady-state velocity of the system is too low, increase Kv.
 * A quick and dirty Kv can be calculated as max output / max velocity.
 
 ### Manually Determining Kv and Ka
@@ -57,7 +57,7 @@ If you want to empirically determine values for Kv and Ka (such as to verify Rec
 
 Once feedforward gains have been found, there are two main options for finding Kp and Kd:
 
-1. Use [SysId's theoretical mode](sysid/theoretical−mode.md) with Kv, Ka, the maximum allowed output, and an error tolerance to estimate Kp and Kd.
+1. Use [SysId's theoretical mode](sysid/theoretical-mode.md) with Kv, Ka, the maximum allowed output, and an error tolerance to estimate Kp and Kd.
 2. Manually tune Kp and Kd (the focus of this section).
 
 ### Manual
