@@ -29,4 +29,4 @@ SysId requires three different datasets for each motor that will be characterize
 
 1. Position
 2. Velocity
-3. *Output* Voltage
+3. *Output* Voltage (not battery/bus voltage)
