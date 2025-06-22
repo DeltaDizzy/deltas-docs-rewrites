@@ -30,3 +30,9 @@ SysId requires three different datasets for each motor that will be characterize
 1. Position
 2. Velocity
 3. *Output* Voltage (not battery/bus voltage)
+
+## Extracting Logs
+
+After recording your log, you must extract it from the RoboRIO. If you used `SignalLogger`, follow its documentation. If you used `DataLogManager`, `URCL`, or another logger that creates a .wpilog file on the RoboRIO, use WPILib's `DataLogTool`. If a USB flash drive was plugged into the RoboRIO and had sufficient free space, the log will have been recorded to it, so unplugging the drive and copying the file onto your computer is also possible.
+
+After the log file is in hand, open the SysId application and proceed to [Loading Data](loading-data.md).
