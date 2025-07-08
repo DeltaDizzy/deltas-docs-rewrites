@@ -1,4 +1,4 @@
-site_name: My FRC Docs
+site_name: Deltas-Docs-Rewrites
 theme: readthedocs
 markdown_extensions:
   - admonition
@@ -6,3 +6,12 @@ nav:
   - Home: index.md
   - Command-Based:
     - Getting Started: command-based/getting-started.md
+  - System Identification:
+    - Introduction to System Identification: system-id/index.md
+    - SysId:
+      - Introduction to the SysId Application: system-id/sysid/index.md
+      - Logging Data: system-id/sysid/logging-data.md
+      - Loading Data: system-id/sysid/loading-data.md
+      - Analyzing Data: system-id/sysid/analyzing-data.md
+      - Viewing Diagnostics: system-id/sysid/diagnostics.md
+      - Troubleshooting: system-id/sysid/troubleshooting.md
