@@ -74,6 +74,6 @@ SysIdRoutine routine = new SysIdRoutine(
 
 ## Extracting Logs
 
-After recording your log, you must extract it from the SystemCore. WPILib logging will leave a .wpilog on the SystemCore, which can be downloaded remotely using `DataLogTool`. If a USB flash drive was plugged into the SystemCore and had sufficient free space, the log will have been recorded to it, so unplugging the drive and copying the file onto your computer is also possible.
+After recording your log, you must extract it from the SystemCore. WPILib logging will leave a .wpilog on the SystemCore, which can be downloaded remotely using `DataLogTool` or AdvantageScope. If a USB flash drive was plugged into the SystemCore and had sufficient free space, the log will have been recorded to it, so unplugging the drive and copying the file onto your computer is also possible.
 
 After the log file is in hand, open the SysId application and proceed to [Loading Data](loading-data.md).
